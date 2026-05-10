@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRO Aerolíneas Argentinas | Excelencia en Motores</title>
+    <!-- Google Fonts: Montserrat para un look corporativo -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- NAVBAR (Basado en aerolineastec.com.ar) -->
+    <header class="navbar">
+        <div class="navbar__container">
+            <div class="navbar__logo">
+                <span class="ar-text">AerolíneasArgentinas</span> <span class="tec-text">Técnico</span>
+            </div>
+            <nav class="navbar__menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#capacidades">Capacidades</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION (Tu foto del hangar al amanecer) -->
+        <section id="home" class="hero" style="background-image: linear-gradient(rgba(0, 90, 156, 0.4), rgba(0, 0, 0, 0.6)), url('IMG/LEAP.jpg');">
+            <div class="hero__content">
+                <h1>MANTENIMIENTO DE MOTORES</h1>
+                <p>Capacidades avanzadas en CFM56, CF34 y CF6. Certificación ANAC, FAA y EASA.</p>
+                <a href="#servicios" class="btn-primary">Nuestros Servicios</a>
+            </div>
+        </section>
+
+        <!-- SERVICIOS (Flexbox) -->
+        <section id="servicios" class="section">
+            <h2 class="title-main">Soluciones Ofrecidas</h2>
+            <div class="flex-services">
+                <article class="service-card">
+                    <div class="card-icon">✈️</div>
+                    <h3>Hospital Visit</h3>
+                    <p>Reemplazo de módulos y submódulos hasta nivel de pieza.</p>
+                </article>
+                <article class="service-card">
+                    <div class="card-icon">🔍</div>
+                    <h3>Inspecciones</h3>
+                    <p>Boroscopía con video reporte y reparaciones Boro-blending.</p>
+                </article>
+                <article class="service-card">
+                    <div class="card-icon">🔧</div>
+                    <h3>On-Wing Support</h3>
+                    <p>Lavado de compresor, balanceo de Fan y On-wing support integral.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- CAPACIDADES TÉCNICAS (Grid) -->
+        <section id="capacidades" class="section section--gray">
+            <h2 class="title-main">Capacidades por Planta de Poder</h2>
+            <div class="grid-engines">
+                <!-- Tarjeta Motor CFM56 -->
+                <div class="engine-item">
+                    <div class="engine-header">CFM56-7B (Boeing 737 NG)</div>
+                    <div class="engine-content">
+                        <p><strong>Nivel 3 - Módulos Mayores:</strong> Fan, Core y LPT Major Modules.</p>
+                        <p><strong>Módulos Menores:</strong> Fan & Booster, TGB/AGB, HPT Rotor y Combustor.</p>
+                        <p><strong>Reparaciones:</strong> Fan Disk Replacement, HPT Blades Replacement.</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta Motor CF34 -->
+                <div class="engine-item">
+                    <div class="engine-header">CF34-10E (Embraer 190)</div>
+                    <div class="engine-content">
+                        <p><strong>Procedimientos Especiales:</strong> LPT Stg 4 Blades (SP 008).</p>
+                        <p><strong>Soporte:</strong> TRF Repair, Top Case Repair y Critical SBs introduction.</p>
+                        <p><strong>Sellos:</strong> #1 Bearing seal replacement (SP 114).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO (Media Queries adaptado) -->
+        <section id="contacto" class="section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Contáctenos</h2>
+                    <p>Ezeiza, Buenos Aires, Argentina</p>
+                    <p>Taller de Motores - Planta Industrial</p>
+                </div>
+                <form action="https://formspree.io/f/tu-id" method="POST" class="contact-form">
+                    <input type="text" name="name" placeholder="Nombre y Apellido" required>
+                    <input type="email" name="email" placeholder="Email Corporativo" required>
+                    <textarea name="message" placeholder="Detalle su requerimiento de motor..."></textarea>
+                    <button type="submit" class="btn-submit">ENVIAR CONSULTA</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Aerolíneas Argentinas MRO Division | Mantenimiento de Aeronaves</p>
+    </footer>
+
+</body>
+</html>
+
